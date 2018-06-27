@@ -7,8 +7,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener{
-    private TextView Ans;
+public class MainActivity extends AppCompatActivity {
+    private TextView display;
     private Button btnBack,btnClear,btnPoint,btnEquals;
     private Button btnAdd,btnSubtract,btnMultiply,btnDivided;
     private Button btn0,btn1,btn2,btn3,btn4,btn5,btn6,btn7,btn8,btn9;
@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.layout_main);
 
-        Ans = (TextView)findViewById(R.id.display);
+        display = (TextView)findViewById(R.id.display);
         btnBack = (Button)findViewById(R.id.btnBack);
         btnClear = (Button)findViewById(R.id.btnClear);
         btnPoint = (Button)findViewById(R.id.btnPoint);
@@ -56,33 +56,41 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btn8.setText("8");
         btn9.setText("9");
 
-        btnBack.setOnClickListener(this);
-        btnClear.setOnClickListener(this);
-        btnPoint.setOnClickListener(this);
-        btnEquals.setOnClickListener(this);
-        btnAdd.setOnClickListener(this);
-        btnSubtract.setOnClickListener(this);
-        btnMultiply.setOnClickListener(this);
-        btnDivided.setOnClickListener(this);
-        btn0.setOnClickListener(this);
-        btn1.setOnClickListener(this);
-        btn2.setOnClickListener(this);
-        btn3.setOnClickListener(this);
-        btn4.setOnClickListener(this);
-        btn5.setOnClickListener(this);
-        btn6.setOnClickListener(this);
-        btn7.setOnClickListener(this);
-        btn8.setOnClickListener(this);
-        btn9.setOnClickListener(this);
-
-
-
-
-
+        btnBack.setOnClickListener(onClickListener);
+        btnClear.setOnClickListener(onClickListener);
+        btnPoint.setOnClickListener(onClickListener);
+        btnEquals.setOnClickListener(onClickListener);
+        btnAdd.setOnClickListener(onClickListener);
+        btnSubtract.setOnClickListener(onClickListener);
+        btnMultiply.setOnClickListener(onClickListener);
+        btnDivided.setOnClickListener(onClickListener);
+        btn0.setOnClickListener(onClickListener);
+        btn1.setOnClickListener(onClickListener);
+        btn2.setOnClickListener(onClickListener);
+        btn3.setOnClickListener(onClickListener);
+        btn4.setOnClickListener(onClickListener);
+        btn5.setOnClickListener(onClickListener);
+        btn6.setOnClickListener(onClickListener);
+        btn7.setOnClickListener(onClickListener);
+        btn8.setOnClickListener(onClickListener);
+        btn9.setOnClickListener(onClickListener);
     }
+    private View.OnClickListener onClickListener = new View.OnClickListener() {
+        @Override
+        public void onClick(View view) {
+            int btnId = ((Button)view).getId();
+            String displayStr = display.getText().toString();
+            switch (btnId){
+                case R.id.btnBack:
+                    if (displayStr.length()>1)
+                        display.setText(displayStr.substring(0,displayStr.length()-1));
+                    else if (displayStr.length()==1){
 
-    @Override
-    public void onClick(View v) {
+                    }
+            }
 
-    }
+        }
+    };
+
+
 }
