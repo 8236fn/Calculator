@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/display"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/frame"
+        android:gravity="center_vertical|end"
+        android:paddingEnd="20dp"
+        android:paddingStart="20dp"
+        android:text="0"
+        android:textAlignment="gravity"
+        android:textSize="36sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/btnFunction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnBack"
+            style="@style/buttons"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:text="倒退" />
+
+        <Button
+            android:id="@+id/btnClear"
+            style="@style/buttons"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:text="清除" />
+    </LinearLayout>
+
+    <TableLayout
+        android:id="@+id/btnKeys"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btn7"
+                style="@style/buttons"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="柒" />
+
+            <Button
+                android:id="@+id/btn8"
+                style="@style/buttons"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="捌" />
+
+            <Button
+                android:id="@+id/btn9"
+                style="@style/buttons"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="玖" />
+
+            <Button
+                android:id="@+id/btnAdd"
+                style="@style/buttons"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="加" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btn4"
+                style="@style/buttons"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="肆" />
+
+            <Button
+                android:id="@+id/btn5"
+                style="@style/buttons"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="伍" />
+
+            <Button
+                android:id="@+id/btn6"
+                style="@style/buttons"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="陸" />
+
+            <Button
+                android:id="@+id/btnSubtract"
+                style="@style/buttons"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="減" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btn1"
+                style="@style/buttons"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="壹" />
+
+            <Button
+                android:id="@+id/btn2"
+                style="@style/buttons"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="貳" />
+
+            <Button
+                android:id="@+id/btn3"
+                style="@style/buttons"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="叁" />
+
+            <Button
+                android:id="@+id/btnMultiplay"
+                style="@style/buttons"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="乘" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btnPoint"
+                style="@style/buttons"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="點" />
+
+            <Button
+                android:id="@+id/btn0"
+                style="@style/buttons"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="零" />
+
+            <Button
+                android:id="@+id/btnEquals"
+                style="@style/buttons"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="等於" />
+
+            <Button
+                android:id="@+id/btnDivided"
+                style="@style/buttons"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="除" />
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>
