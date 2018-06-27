@@ -1,3 +1,22 @@
 <resources>
     <string name="app_name">Calculator</string>
+    <string name="display">0</string>
+    <string name="btnBack">倒退</string>
+    <string name="btnClear">刪除</string>
+    <string name="btn0">零</string>
+    <string name="btn1">壹</string>
+    <string name="btn2">貳</string>
+    <string name="btn3">叁</string>
+    <string name="btn4">肆</string>
+    <string name="btn5">伍</string>
+    <string name="btn6">陸</string>
+    <string name="btn7">柒</string>
+    <string name="btn8">捌</string>
+    <string name="btn9">玖</string>
+    <string name="btnPoint">點</string>
+    <string name="btnEquals">等於</string>
+    <string name="btnAdd">加</string>
+    <string name="btnSubtract">減</string>
+    <string name="btnMultiply">乘</string>
+    <string name="btnDivided">除</string>
 </resources>
