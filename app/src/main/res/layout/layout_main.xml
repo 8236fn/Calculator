@@ -13,7 +13,10 @@
         android:id="@+id/display"
         android:layout_width="match_parent"
         android:layout_height="100dp"
-        android:layout_margin="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
         android:background="@drawable/frame"
         android:gravity="center_vertical|end"
         android:paddingLeft="20dp"
@@ -22,7 +25,9 @@
         android:textAlignment="gravity"
         android:textColor="@android:color/black"
         android:textSize="36sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:singleLine="true"
+        android:ellipsize="end"/>
 
     <LinearLayout
         android:id="@+id/btnFunction"
@@ -31,29 +36,13 @@
         android:layout_margin="10dp"
         android:orientation="horizontal">
 
-        <Button
-            android:id="@+id/btnBack"
-            style="@style/buttons"
-            android:layout_width="match_parent"
-            android:layout_height="100dp"
-            android:layout_marginStart="5dp"
-            android:layout_weight="1"
-            android:text="@string/btnBack" />
-
-        <Button
-            android:id="@+id/btnClear"
-            style="@style/buttons"
-            android:layout_width="match_parent"
-            android:layout_height="100dp"
-            android:layout_marginEnd="5dp"
-            android:layout_weight="1"
-            android:text="@string/btnClear" />
     </LinearLayout>
 
     <TableLayout
         android:id="@+id/btnKeys"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_marginBottom="10dp"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp">
 
@@ -169,11 +158,11 @@
             android:gravity="center">
 
             <Button
-                android:id="@+id/btnPoint"
-                style="@style/buttons"
+                android:id="@+id/btnClear"
+                style="@style/buttonred"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:text="@string/btnPoint" />
+                android:text="@string/btnClear" />
 
             <Button
                 android:id="@+id/btn0"
@@ -184,7 +173,7 @@
 
             <Button
                 android:id="@+id/btnEquals"
-                style="@style/buttons"
+                style="@style/buttonred"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:text="@string/btnEquals" />

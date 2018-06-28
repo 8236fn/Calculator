@@ -5,5 +5,8 @@
     <color name="colorAccent">#FF4081</color>
     <color name="startColor">#0575e6</color>
     <color name="endColor">#021b79</color>
-    <color name="bgColor">#61fff75b</color>
+    <color name="bgColor">#f3f9a7</color>
+    <color name="bg2Color">#cac531</color>
+    <color name="red">#ed213a</color>
+    <color name="darkred">#93291e</color>
 </resources>
